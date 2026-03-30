@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .box {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Test Page</h1>
+
+    <div class="box">
+        <h2>Text Elements</h2>
+        <p>This is a paragraph for testing.</p>
+        <a href="https://example.com" target="_blank">Test Link</a>
+    </div>
+
+    <div class="box">
+        <h2>Form Test</h2>
+        <form>
+            <label>Name:</label><br>
+            <input type="text" placeholder="Enter name"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter email"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="box">
+        <h2>Button + JavaScript</h2>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="output"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("output").innerText = "Button clicked!";
+        }
+    </script>
+
+</body>
+</html>
